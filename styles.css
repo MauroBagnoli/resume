@@ -1,0 +1,457 @@
+@font-face {
+font-family: Apercu;
+src: url(fonts/ApercuLight.otf);
+}
+
+body {
+  font-family: Apercu,"Source Sans Pro",Helvetica,Arial,sans-serif;
+}
+
+.intro {
+  padding: 120px 100px;
+  height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.hello {
+  max-width: 700px;
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 2.5 rem;
+}
+
+.tagline {
+  max-width: 700px;
+  line-height: 1.5;
+}
+
+.emoji{
+  display: inline-block;
+  vertical-align: text-top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+}
+.hand{
+  background-image: url(img/wave.png);
+  margin-left: 10px;
+  cursor: pointer;
+}
+.hand:hover {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: red;
+  background: yellow;
+}
+
+::selection {
+  color: white;
+  background: mediumspringgreen;
+}
+
+
+@keyframes wave-animation {
+    0% { transform: rotate(  0.0deg) }
+   10% { transform: rotate(-10.0deg) }
+   20% { transform: rotate( 12.0deg) }
+   30% { transform: rotate(-10.0deg) }
+   40% { transform: rotate(  9.0deg) }
+   50% { transform: rotate(  0.0deg) }
+  100% { transform: rotate(  0.0deg) }
+}
+
+.mail {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.gmail{
+  display: inline-block;
+  padding: 6px 3px;
+  text-decoration: none;
+  box-shadow: inset 0 -3px 0 #007bff;
+}
+
+.highlight-link  {
+  padding: 10px 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: inset 0 -5px 0 mediumspringgreen;
+}
+.highlight-link:hover  {
+  transition: all .2s ease-in-out;
+  box-shadow: inset 0 -55px 0 0 mediumspringgreen;
+  color: white;
+}
+
+a{
+  color: black;
+  font-weight: bold;
+}
+a:hover{
+  color: mediumspringgreen;
+  text-decoration: none;
+}
+.section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 100px 170px;
+}
+.section__title {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 200px;
+    margin-right: 70px;
+    color: mediumspringgreen;
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 14px;
+}
+.section__content {
+    font-weight: 300;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 650px;
+}
+
+.section__content p {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+
+.skills .skillz {
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+}
+.skills .skillz__category__label {
+
+    font-weight: 700;
+    color: #36363c;
+    text-transform: uppercase;
+
+}
+ul {
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+.skills .skillz__category__item {
+
+    margin: 3px 0;
+    font-size: .9rem;
+
+}
+
+.experience .jobs {
+
+    margin-bottom: 100px;
+
+}
+.experience .job {
+
+    margin-bottom: 25px;
+
+}
+.experience .job .time-place {
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+}
+
+.experience .arrow-link::after {
+
+    width: 20px;
+    height: 20px;
+
+}
+.arrow-link::after {
+
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    position: relative;
+    margin-left: 15px;
+    content: 'here';
+    display: inline-block;
+
+}
+
+
+.other-projects .project {
+
+    max-width: 600px;
+    margin-bottom: 50px;
+
+}
+.other-projects .project__name {
+
+    margin-bottom: 10px;
+
+}
+
+.other-projects .project p {
+
+    font-size: .9rem;
+    margin-bottom: 20px;
+
+}
+.other-projects .project__used__item:first-of-type {
+
+    margin-left: 0;
+
+}
+.other-projects .project__used__item {
+
+    display: inline-block;
+    margin: 3px 3px 3px 0;
+        margin-left: 0px;
+    font-family: Inconsolata,monospace;
+    font-size: .75rem;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 3px;
+    color: #007bff;
+    border: 1px solid #007bff;
+    background: 0 0;
+
+}
+
+.footer {
+  padding: 50px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer__copyright {
+  font-weight: 700;
+  width: 200px;
+  font-size: 14px;
+}
+
+.footer__links a {
+  position: relative;
+  display: inline-block;
+  color: #007bff !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 15px;
+  outline: 0;
+}
+
+.footer__links a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #007bff;
+  content: "";
+  opacity: 0;
+  -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  transition: height 0.3s, opacity 0.3s, transform 0.3s;
+  transition: height 0.3s, opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+.footer__links a .text {
+  font-size: 0.9rem;
+  display: inline;
+  letter-spacing: 1px;
+}
+
+.footer__links a {
+  color: mediumspringgreen !important;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#top-button {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: 0 0;
+  border: none;
+  outline: 0;
+  width: 40px;
+  position: fixed;
+  bottom: 25px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+}
+#top-button {
+  cursor: pointer;
+}
+#top-button img {
+  width: 100%;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.rock {
+  width: 20px;
+  height: 20px;
+  margin: 0 3px;
+  vertical-align: text-bottom;
+}
+
+#top-button:hover {
+  position: fixed;
+  bottom: 35px;
+  right: 10px;
+}
+
+.featured-projects .project {
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 100px;
+    margin-left: -5%;
+
+}
+.featured-projects .project__caption {
+
+    width: 125px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-left: 30px;
+
+}
+
+#popup {
+  display: "inline-block";
+  opacity: 0;
+  font-size:16px;
+}
+
+.inandout {
+  animation: fadeOut 1s;
+  }@keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+
+  .featured-projects .project__pic {
+      max-width: 700px;
+      overflow: visible;
+      margin: 0;
+  }
+
+  .phone {
+    margin-top: -10px;
+  }
+
+  .project__pic.phones a {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+
+
+@media (max-width: 425px) {
+  .intro {
+    padding: 20px 50px;
+  }
+  .highlight-link {
+    display: inline-block;
+    padding: 15px 5px;
+  }
+  .section {
+    padding: 30px 50px;
+    display: block;
+  }
+  .section__title {
+    text-align: left;
+    padding-bottom: 20px;
+  }
+  .skillz {
+    flex-flow: wrap;
+  }
+  .skillz__category {
+    width: 26vw;
+    margin-bottom: 15px;
+  }
+
+  .experience .jobs {
+      margin-bottom: 50px;
+  }
+
+  .featured-projects .project {
+      margin-left: unset;
+  }
+  .section__content {
+    font-size: 0.9rem;
+  }
+
+  .featured-projects .project__caption {
+      margin-left: 0px;
+      margin-top: 10px;
+  }
+
+  .footer {
+    display: block;
+    padding: 30px 50px;
+  }
+  .footer__copyright {
+    font-size: 16px;
+    width: unset;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .footer__links {
+    text-align: center;
+  }
+  .featured-projects .project {
+    display: block;
+
+  }
+  .featured-projects .project__caption {
+    width: unset;
+  }
+
+}
